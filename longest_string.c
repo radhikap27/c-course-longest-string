@@ -8,13 +8,13 @@ int main(int argc, char* argv[]) {
          printf(argv[1]);
 
     else if (argc > 2) {
-        char *max = argv[1];
+        char *longest = argv[1];
         for (int i = 1; i < argc; i++) {
-                if (strlen(argv[i]) > strlen(max)) {
-                    max = argv[i];
+                if (strlen(argv[i]) > strlen(longest)) {
+                    longest = argv[i];
                 }
         }
-        printf(max);
+        printf(longest);
     }
 
     return EXIT_SUCCESS;
